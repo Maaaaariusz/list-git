@@ -1,9 +1,17 @@
 import styled from 'styled-components';
+import { colors } from "../../utils/styles/color.style";
 
 export const Container = styled.div`
-    background: red;
-    `
-
-export const Head = styled.header`
-    background: yellow;
-    `
+    background: ${colors.black};
+    padding: 20px 0;
+    
+    a {
+        color: ${colors.white};
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    &:hover {
+        color: ${colors.light}
+    }
+`;
